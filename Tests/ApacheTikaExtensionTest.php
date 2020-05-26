@@ -9,11 +9,12 @@
 namespace Joli\ApacheTikaBundle\Tests;
 
 use Joli\ApacheTikaBundle\DependencyInjection\ApacheTikaExtension;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class ApacheTikaExtensionTest extends \PHPUnit_Framework_TestCase
+class ApacheTikaExtensionTest extends TestCase
 {
     /** @var ApacheTikaExtension */
     private $extension;

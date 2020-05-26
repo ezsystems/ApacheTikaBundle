@@ -49,7 +49,7 @@ class TikaKernel extends Kernel
      */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir() . '/config/config_' . $this->mode . '.yml');
+        $loader->load($this->getProjectDir() . '/Tests/app/config/config_' . $this->mode . '.yml');
 
         // graciously stolen from https://github.com/javiereguiluz/EasyAdminBundle/blob/master/Tests/Fixtures/App/AppKernel.php#L39-L45
         if ($this->isSymfony3()) {
@@ -74,7 +74,7 @@ class TikaKernel extends Kernel
      */
     public function getCacheDir()
     {
-        return $this->getRootDir() . '/cache/' . $this->mode . '/' . $this->getEnvironment();
+        return $this->getProjectDir() . '/var/cache/' . $this->mode . '/' . $this->environment;
     }
 
     /**
@@ -82,7 +82,7 @@ class TikaKernel extends Kernel
      */
     public function getLogDir()
     {
-        return $this->getRootDir() . '/logs/' . $this->mode . '/' . $this->getEnvironment();
+        return $this->getProjectDir() . '/var/log/' . $this->mode . '/' . $this->environment;
     }
 
     protected function isSymfony3()
