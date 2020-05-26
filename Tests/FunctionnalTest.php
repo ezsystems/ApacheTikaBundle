@@ -9,8 +9,9 @@
 namespace Joli\ApacheTikaBundle\Tests;
 
 use Joli\ApacheTikaBundle\Tests\app\TikaKernel;
+use PHPUnit\Framework\TestCase;
 
-class FunctionnalTest extends \PHPUnit_Framework_TestCase
+class FunctionnalTest extends TestCase
 {
     public function testCliKernelWorks()
     {
