@@ -32,5 +32,10 @@
         "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
     }
 }
